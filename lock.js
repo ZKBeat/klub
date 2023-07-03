@@ -14,7 +14,7 @@ if(z==3)
 if (document.getElementById('num_'+ sumb[0]).checked){
 if (document.getElementById('num_'+ sumb[1]).checked) {
 if (document.getElementById('num_'+ sumb[2]).checked){
-alert("Поздравляю, вы приглашены на лофт! Ваше приглашение в беседу: https://vk.me/join/AJQ1d2FTNyiUqjE4W0O4m_kj . Чтобы получить скидку 100р., напишите в чат: Иди к нам! Стоимость 1700");
+alert("Поздравляю, вы приглашены на лофт! Ваше приглашение в беседу: https://vk.me/join/AJQ1d2FTNyiUqjE4W0O4m_kj . Цена билета: 1800. Чтобы получить скидку 100р., напишите в чат: Иди к нам!");
 }}}
 else
 alert("access denied");
