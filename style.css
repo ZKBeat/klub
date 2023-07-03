@@ -97,3 +97,10 @@ body{
   .checkbox.style-f input:checked ~ .checkbox__checkmark:after {
     transform: scale(1);
   }
+
+.radius {
+    background: #f0f0f0; /* Цвет фона */
+    border: 1px solid black; /* Параметры рамки */
+    padding: 15px; /* Поля вокруг текста */
+    margin-bottom: 10px; /* Отступ снизу */
+   }
