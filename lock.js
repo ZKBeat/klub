@@ -1,7 +1,7 @@
 var z = 0;
 function lock_f() {
 z=z+1;
-var pass = ["123", "987"];
+var pass = ["258", "703", "327", "417", "179"];
 var sumb = [];
 for (var n = 0; n < Object.keys(pass).length; n++) {
 
