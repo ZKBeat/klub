@@ -72,7 +72,6 @@ input[type=checkbox] {
         font-size: 25px;
         color: #9f9f9f;
         text-align: center;
-        line-height: 15px;
         border-radius: 8px;
 
     }
@@ -83,7 +82,6 @@ input[type=checkbox] {
       font-size: 25px;
       color: #818181;
       text-align: center;
-      line-height: 15px;
       border-radius: 8px;
 
   }
@@ -96,7 +94,6 @@ input[type=checkbox] {
       font-size: 25px;
       color: #393939;
       text-align: center;
-      line-height: 15px;
       border-radius: 8px;
 
   }
