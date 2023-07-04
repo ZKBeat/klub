@@ -83,6 +83,7 @@ input[type=checkbox] {
       color: #818181;
       text-align: center;
       border-radius: 8px;
+        padding-bottom: 2px;
 
   }
 
@@ -95,6 +96,7 @@ input[type=checkbox] {
       color: #393939;
       text-align: center;
       border-radius: 8px;
+        padding-bottom: 2px;
 
   }
 
@@ -106,6 +108,7 @@ input[type=checkbox] {
           padding-left: 5px;   
           margin-right: 5px;  
           font-size: 5px;
+        padding-bottom: 2px;
       }
       
     
