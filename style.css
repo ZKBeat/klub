@@ -11,6 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    accent-color: black;
 }
 .up
 {
@@ -48,59 +49,68 @@ body{
     right: -15px;
   }
 
-  .checkbox-circle input[type="checkbox"] + label:before {
-    content: "";
-    display: block;
-    width: 1.4em;
-    height: 1.4em;
-    border: 1px solid #343a3f;
-    border-radius: 1em;
-    position: absolute;
-    left: 0;
-    top: 0;
-    -webkit-transition: all 0.2s, transform 0.3s ease-in-out;
-    transition: all 0.2s, transform 0.3s ease-in-out;
-    background: #f3f3f3;
+.locker
+{
+    border:1px solid black;
+    border-radius: 30px;
+    height: 30px;
+    align-items: center;
+}
+
+input[type=checkbox] {
+  
+      display: none;
   }
-  .checkbox-circle input[type="checkbox"]:checked + label:before {
-    border-radius: 1em;
-    border: 2px solid #fff;
-    width: 1.2em;
-    height: 1.2em;
-    background: #50565a;
-    box-shadow: 0 0 0 1px #000;
-    -webkit-transform: rotateX(180deg);
-    transform: rotateX(180deg);
+  .checkbox label:before {
+        border-radius: 3px;
+    }
+    
+  
+  input[type=checkbox] + label:before {
+        content: "●";
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+        font-size: 25px;
+        color: #9f9f9f;
+        text-align: center;
+        line-height: 15px;
+        border-radius: 8px;
+
+    }
+
+    input[type=checkbox]:hover + label:before {
+      content: "●";
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+      font-size: 25px;
+      color: #818181;
+      text-align: center;
+      line-height: 15px;
+      border-radius: 8px;
+
   }
 
 
-  .checkbox.style-f {
-    display: inline-block;
-    position: relative;
-    padding-left: 30px;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  .checkbox.style-f input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  .checkbox.style-f input:checked ~ .checkbox__checkmark {
-    background-color: #eee;
-  }
-  .checkbox.style-f input:checked ~ .checkbox__checkmark:after {
-    transform: scale(1);
+
+    input[type=checkbox]:checked + label:before {
+      content: "●";
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+      font-size: 25px;
+      color: #393939;
+      text-align: center;
+      line-height: 15px;
+      border-radius: 8px;
+
   }
 
-.radius {
-    background: #f0f0f0; /* Цвет фона */
-    border: 1px solid black; /* Параметры рамки */
-    padding: 15px; /* Поля вокруг текста */
-    margin-bottom: 10px; /* Отступ снизу */
-   }
+    label {
+      
+          display: inline-block;      
+          cursor: pointer;      
+          position: relative;     
+          padding-left: 5px;   
+          margin-right: 5px;  
+          font-size: 5px;
+      }
+      
+    
+
+

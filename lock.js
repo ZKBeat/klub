@@ -1,7 +1,7 @@
 var z = 0;
 function lock_f() {
 z=z+1;
-var pass = ["123", "324"];
+var pass = ["123", "987"];
 var sumb = [];
 for (var n = 0; n < Object.keys(pass).length; n++) {
 
@@ -11,15 +11,18 @@ for (var n = 0; n < Object.keys(pass).length; n++) {
 }
 if(z==3)
 {
-if (document.getElementById('num_'+ sumb[0]).checked){
-if (document.getElementById('num_'+ sumb[1]).checked) {
-if (document.getElementById('num_'+ sumb[2]).checked){
+if (document.getElementById('num_'+ sumb[0]).checked && document.getElementById('num_'+ sumb[1]).checked && document.getElementById('num_'+ sumb[2]).checked){
 alert("Поздравляю, вы приглашены на лофт! Ваше приглашение в беседу: https://vk.me/join/AJQ1d2FTNyiUqjE4W0O4m_kj . Цена билета: 1800. Чтобы получить скидку 100р., напишите в чат: Иди к нам!");
-}}}
-else
-alert("access denied");
-location.reload()
+location.reload();
+break;
 }
+else
+if(n == Object.keys(pass).length-1){
+  alert("access denied");
+  location.reload();
+  }
+}
+
 }
 
 }
@@ -63,3 +66,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // вызываем функцию countdownTimer каждую секунду
     timerId = setInterval(countdownTimer, 1000);
   });
+
